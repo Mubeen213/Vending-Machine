@@ -46,8 +46,6 @@ public class Item {
 
     public String toString(){
 
-        return "Name: " + this.name +".\n"
-                +"Price: " + this.price +".\n"
-                +"Qunatity: " + this.quantity + ".\n";
+        return this.name + " : " + this.price + " (" + this.quantity + ")";
     }
 }
