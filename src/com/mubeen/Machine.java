@@ -21,4 +21,13 @@ public class Machine {
         this.items[row][spot] = new Item(item);
     }
 
+    public boolean dispense(int row, int spot){
+
+        if(this.items[row][spot].getQuantity()>0){
+            this.items[row][spot].setQuantity(this.items[row][spot].getQuantity()-1);
+            return true;
+        }
+        return false;
+    }
+
 }
