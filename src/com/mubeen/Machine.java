@@ -30,4 +30,15 @@ public class Machine {
         return false;
     }
 
+    public String toString(){
+        String temp = "\t";
+        for (int i = 0; i < this.items.length; i++) {
+            for (int j = 0; j < this.items[i].length; j++) {
+                temp +=this.items[i][j].toString();
+            }
+            temp +="\n\n";
+            temp +=  "\t";
+        }
+        return temp;
+    }
 }
